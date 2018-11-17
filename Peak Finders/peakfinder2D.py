@@ -1,34 +1,9 @@
+from peakfinder1D import one_peak_finder
 
-
-def one_peak_finder(matrix):
-
-    n = len(matrix)
-
-    mid = n // 2
-    start = 0
-    end = n - 1
-
-    while start < mid and end > mid:
-
-        if matrix[mid] < matrix[mid+1]:
-            start = mid+1
-            mid = (start + end ) //2
-
-        elif matrix[mid] < matrix[mid-1]:
-            end = mid-1
-            mid = (start + end) // 2
-
-        else:
-            return (mid,matrix[mid])
-
-    if matrix[start] > matrix[end]:
-        return  (start,matrix[start])
-    else:
-        return (end,matrix[end])
-
-
-
+# 2D peak finder
 def peak_finder(matrix):
+
+    # Initializing variables
     row_end = len(matrix) - 1
     col_end = len(matrix[0]) -1
     col_start = 0
@@ -36,6 +11,7 @@ def peak_finder(matrix):
     col_mid =  (col_start+col_end) // 2
 
 
+    # Check for one D peak
     while col_start < col_mid:
         new_list = []
         for i in range(row_end+1):
@@ -54,6 +30,7 @@ def peak_finder(matrix):
             return (row,col_mid,matrix[row][col_mid])
 
 
+    # Find one D peak of the selected column
     if col_start == col_mid and col_start != col_end:
         new_list = []
         for i in range(row_end+1):
