@@ -13,7 +13,8 @@ class map:
         hashValue = self.hash_function(key,len(self.keys), probeIndex)
 
 
-        if self.keys[hashValue] == None:
+        if self.keys[hashValue] == None or \
+            self.keys[hashValue] == "X":
 
             self.keys[hashValue] = key
             self.value[hashValue] = value
@@ -30,7 +31,8 @@ class map:
                 probeIndex += 1
                 rehash = self.hash_function(key,len(self.keys),probeIndex)
 
-                if self.keys[hashValue] == None:
+                if self.keys[hashValue] == None or \
+            self.keys[hashValue] == "X":
                     self.keys[hashValue] = key
                     self.value[hashValue] = value
                     positionFound = True
@@ -58,6 +60,29 @@ class map:
             else:
                 continue
 
+
+    def delete(self,key):
+
+        probeIndex = 0
+        hashValue = self.hash_function(key,self.size,probeIndex)
+
+        found = False
+        stop = False
+        inital = hashValue
+
+        while  self.keys[hashValue] != None and not found and not  stop:
+
+            if self.keys[hashValue] == key:
+                self.keys[hashValue] = "X"
+                found = True
+
+            else:
+                probeIndex += 1
+                hashValue = self.hash_function(key,self.size,probeIndex)
+                if hashValue == inital:
+                    stop = True
+
+        return found
 
 
     def hash_function(self,key,size, probeIndex):
