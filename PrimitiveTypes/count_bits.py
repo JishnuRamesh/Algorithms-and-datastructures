@@ -46,3 +46,41 @@ def divide_and_conquer_parity(num, mask=48):
     else:
         return (divide_and_conquer_parity((num >> mask), mask=mask//2) ^
                 divide_and_conquer_parity((num & mask), mask=mask // 2))
+
+
+# O(1)
+def swap(num, i, j):
+    if i == j:
+        return num
+    else:
+        num_i = num >> i
+        num_j = num >> j
+        if num_i & 1 == num_j & 1:
+            return num
+        else:
+            bit_mask = (1 << i) | (1 << j)
+            return num ^ bit_mask
+
+
+Precomputed_reverse = {}
+# O(n/L)
+def reverse_bits(num):
+    bit_mask = 0xFFF
+    mask = 16
+    return (
+            Precomputed_reverse[ (num & bit_mask) << mask * 3] |
+            Precomputed_reverse[ (num >> (mask * 3))]  |
+            Precomputed_reverse[ ((num >> (mask * 2)) & bit_mask) << mask] |
+            Precomputed_reverse[ ((num >> (mask)) * bit_mask) << mask * 2]
+
+            )
+
+
+# O(n) where n is the length of unsigned num
+def get_near_weighted_digits(num):
+    num_unsigned = 64
+    for i in range(num_unsigned -1):
+        if (num >> i) & 1 != ((num >> (i+1)) & 1):
+            num ^= ( (1 << i+1) | (1 << i) )
+            break
+    return num

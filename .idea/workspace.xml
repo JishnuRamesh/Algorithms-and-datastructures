@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c9aea0-4542-46fc-aea7-b14efcca413b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PrimitiveTypes/count_bits.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Algorithms-and-datastructures.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Algorithms-and-datastructures.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimitiveTypes/count_bits.py" beforeDir="false" afterPath="$PROJECT_DIR$/PrimitiveTypes/count_bits.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560776201057</updated>
-      <workItem from="1578900371956" duration="2783000" />
+      <workItem from="1578900371956" duration="3668000" />
+      <workItem from="1578990447012" duration="2739000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic hash map">
       <created>1560777531290</created>
