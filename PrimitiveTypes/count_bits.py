@@ -1,4 +1,4 @@
-
+import math
 
 # O(1) * n = O(n)
 def count_bits(num):
@@ -84,3 +84,81 @@ def get_near_weighted_digits(num):
             num ^= ( (1 << i+1) | (1 << i) )
             break
     return num
+
+# O(n) for sum n times -> O(n^2)
+def multiplying_with_binary(x, y):
+
+    def add(a, b):
+        while b:
+            carry = a & b
+            a, b = a ^ b , carry << 1
+        return a
+
+    result = 0
+    i = 0
+    while x > 0:
+        if (x & 1) == 1:
+            #result += (y <<  i)
+            result = add(result, (y<<i))
+        x >>= 1
+        y <<= 1
+    return result
+
+
+def divide_using_bits(x, y):
+    quotient, power = 0, 32
+    y_power = y << power
+    while x >= y:
+        if y_power <= x:
+            quotient += 1 << power
+            x -= y_power
+        power -= 1
+        y_power >>= 1
+
+    return quotient, x
+
+
+# need to study again
+def power_using_bits(x, y):
+    result , power = 1.0, y
+    if y < 0:
+        power, x = -power, 1.0 / x
+    while power:
+        if power & 1:
+            result *= x
+        x *= x
+        power >>= 1
+    return  result
+
+
+# O(n) where n is the number of digits
+def reverse_digits(x):
+    sum, num = 0 , abs(x)
+    while num:
+        sum = sum * 10 + num % 10
+        num = num // 10
+
+    return -sum if x < 0 else sum
+
+
+# time O(n) and space is O(1)
+def is_pandialdrome(num):
+    if num <= 0:
+        return num == 0
+
+    num_digits = math.floor(math.log10(num)) + 1
+    big_mask = 10**(num_digits - 1)
+
+    while num :
+
+        if num % 10 !=  num // big_mask:
+            return False
+
+        num = num % big_mask
+        num = num // 10
+        big_mask = big_mask // 100
+
+    return True
+
+
+
