@@ -1,4 +1,4 @@
-import math
+import math, random
 
 # O(1) * n = O(n)
 def count_bits(num):
@@ -161,4 +161,14 @@ def is_pandialdrome(num):
     return True
 
 
-
+# O(log(b-a+1)
+def create_random_numbers(a, b):
+    number_of_outcomes = b-a + 1
+    while True:
+        result , i = 0, 0
+        while (1 << i) < number_of_outcomes:
+            result = (result << 1) | random.randint(0, 1)
+            i += 1
+        if result < number_of_outcomes:
+            break
+    return result + a

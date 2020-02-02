@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c9aea0-4542-46fc-aea7-b14efcca413b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Arrays/list_problems.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PrimitiveTypes/count_bits.py" beforeDir="false" afterPath="$PROJECT_DIR$/PrimitiveTypes/count_bits.py" afterDir="false" />
     </list>
@@ -58,7 +59,9 @@
       <updated>1560776201057</updated>
       <workItem from="1578900371956" duration="3668000" />
       <workItem from="1578990447012" duration="2739000" />
-      <workItem from="1579296292255" duration="5279000" />
+      <workItem from="1579296292255" duration="7515000" />
+      <workItem from="1579506826852" duration="2410000" />
+      <workItem from="1580602722223" duration="854000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic hash map">
       <created>1560777531290</created>
@@ -86,5 +89,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1578900400791" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1579396268137">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1579396268137" />
   </component>
 </project>
