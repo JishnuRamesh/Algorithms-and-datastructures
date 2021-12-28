@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c9aea0-4542-46fc-aea7-b14efcca413b" name="Default Changelist" comment="Added basic hash map">
+      <change afterPath="$PROJECT_DIR$/Bit Fiddling/pow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +41,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.is_power_of_two">
+  <component name="RunManager" selected="Python.pow">
     <configuration name="is_power_of_two" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithms-and-datastructures" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,6 +86,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms-and-datastructures" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Bit Fiddling" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bit Fiddling/pow.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="right_propogate" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algorithms-and-datastructures" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,6 +132,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pow" />
         <item itemvalue="Python.is_power_of_two" />
         <item itemvalue="Python.mod_power_of_two" />
         <item itemvalue="Python.right_propogate" />
@@ -144,7 +168,7 @@
       <workItem from="1579506826852" duration="2410000" />
       <workItem from="1580602722223" duration="854000" />
       <workItem from="1640463763886" duration="260000" />
-      <workItem from="1640464266045" duration="3422000" />
+      <workItem from="1640464266045" duration="4855000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic hash map">
       <created>1560777531290</created>
@@ -177,6 +201,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Algorithms_and_datastructures$mod_power_of_two.coverage" NAME="mod_power_of_two Coverage Results" MODIFIED="1640464482290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit Fiddling" />
     <SUITE FILE_PATH="coverage/Algorithms_and_datastructures$is_power_of_two.coverage" NAME="is_power_of_two Coverage Results" MODIFIED="1640464550498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit Fiddling" />
+    <SUITE FILE_PATH="coverage/Algorithms_and_datastructures$pow.coverage" NAME="pow Coverage Results" MODIFIED="1640653249186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit Fiddling" />
     <SUITE FILE_PATH="coverage/Algorithms_and_datastructures$right_propogate.coverage" NAME="right_propogate Coverage Results" MODIFIED="1640464335880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Bit Fiddling" />
   </component>
 </project>
