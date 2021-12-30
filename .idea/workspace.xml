@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c9aea0-4542-46fc-aea7-b14efcca413b" name="Default Changelist" comment="Added basic hash map">
-      <change afterPath="$PROJECT_DIR$/Bit Fiddling/is_palindrome.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bit Fiddling/intersecting_rectangle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +199,7 @@
       <workItem from="1579506826852" duration="2410000" />
       <workItem from="1580602722223" duration="854000" />
       <workItem from="1640463763886" duration="260000" />
-      <workItem from="1640464266045" duration="6663000" />
+      <workItem from="1640464266045" duration="9703000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic hash map">
       <created>1560777531290</created>
